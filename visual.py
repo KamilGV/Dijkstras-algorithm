@@ -248,8 +248,3 @@ class CanvasPage(tk.Tk):
     @staticmethod
     def find_distance(x0, y0, x1, y1):
         return math.sqrt(((x0 - x1) ** 2) + ((y0 - y1) ** 2))
-
-
-if __name__ == '__main__':
-    app = CanvasPage()
-    app.mainloop()
