@@ -135,8 +135,8 @@ class CanvasPage(tk.Tk):
                                 line.weight = weight
                             else:
                                 line = Line(self.selected_circle, circle, weight)
-                                self.matrix[self.selected_circle.position][circle.position] = weight
                                 self.lines.append(line)
+                            self.matrix[self.selected_circle.position][circle.position] = weight
                         self.unselect_all()
                         not_match = False
                         break
